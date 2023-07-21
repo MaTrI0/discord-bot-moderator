@@ -1,12 +1,13 @@
 const ModerClient = require('../Classes/Client/ModerClient')
 const { IntentsBitField } = require('discord.js')
+const { TOKEN, MONGO_URI } = require('./config.json')
 
 // Главный файл управления ботом
 require('dotenv').config()
 
 const opt = {
-	token: '',
-	mongoURI: '',
+	token: TOKEN,
+	mongoURI: MONGO_URI,
 	intents: [
 		IntentsBitField.Flags.Guilds,
 		IntentsBitField.Flags.GuildMembers,
