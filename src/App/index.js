@@ -5,9 +5,8 @@ const { IntentsBitField } = require('discord.js')
 require('dotenv').config()
 
 const opt = {
-	token:
-		'MTEwNjI4OTIzNjY4NjE1MTc4Mg.GIf4uj.e0TKhTHhSCjhtPn3FjHnTGa5acV8pTfKBxnKOM',
-	mongoURI: 'mongodb://localhost:27017/hanko_moder',
+	token: '',
+	mongoURI: '',
 	intents: [
 		IntentsBitField.Flags.Guilds,
 		IntentsBitField.Flags.GuildMembers,
